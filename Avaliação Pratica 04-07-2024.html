@@ -1,0 +1,26 @@
+<script>
+    let palavra = ["joalheiro", "saudade", "casamento","escoria","amora"];
+    let sortear = palavra[Math.floor(Math.random() * palavra.length)];
+
+    function emabalharPalavra(){
+    let aleatorio = sortear.split('').sort();
+    let a = aleatorio.join ("");
+    alert(a)
+    return a;
+    
+    }
+    function jogarWordJumble(){
+    let jogo = prompt("Digite a palavra correta para o anagrama \n" + emabalharPalavra());
+
+        if (jogo == sortear.toLowerCase()){
+            alert ("Resultado correto!")
+        }
+        else{
+            alert ("Você errou!")
+        }
+} 
+
+jogarWordJumble()
+
+    
+</script>
