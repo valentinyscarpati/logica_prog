@@ -1,0 +1,24 @@
+<script>
+
+    let nivel = prompt ("Digite o seu nivel como professor (1, 2 ou 3) da escola aprender:")
+    let hora = parseInt (prompt("Agora digite a quantidade de horas trabalhadas (desconsidere minutos e segundos)."))
+
+    let nivel_1 = 12*hora
+    let nivel_2 = 17*hora
+    let nivel_3 = 25*hora
+
+    switch(nivel){
+        case "1":
+            alert ("Você receberá " + nivel_1 + " reais por hora trabalhada.")
+            break
+        case "2":
+            alert ("Você receberá " + nivel_2 + " reais por hora trabalhada.")
+            break
+        case "3":
+            alert ("Você receberá " + nivel_3 + " reais por hora trabalhada.")
+            break
+        default:
+            alert ("Você não digitou um nível válido, por favor, tente novamente!")
+            break
+    }
+</script>

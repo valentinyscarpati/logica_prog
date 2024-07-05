@@ -1,0 +1,23 @@
+<script>
+    let tipo = prompt ("Digite o tipo de media que ira usar para calcular, sendo '1' para media aritimetica e '2' para media pnderada (3, 3, 4)!")
+    let nota_1 = parseFloat (prompt("Digite a primeira nota."))
+    let nota_2 = parseFloat (prompt("Digite a segunda nota."))
+    let nota_3 = parseFloat (prompt("Digite a terceira nota."))
+    
+    let nota = nota_1 + nota_2 + nota_3
+    let media = nota/3
+    let pond = nota_1*3 + nota_2*3 + nota_3*4
+    let media_pond = pond/10
+
+    switch (tipo){
+        case "1":
+            alert("A média das notas é de " + media + "!")
+            break
+        case "2":
+            alert ("A média das notas e de " + media_pond + "!")
+            break
+        default:
+            alert("Erro, digite uma opção válida")
+            break
+    }
+</script>

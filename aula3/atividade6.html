@@ -1,0 +1,23 @@
+<script>
+
+    let preco_custo_1 = parseFloat (prompt("Digite o valor de custo do primeiro produto:"))
+    let preco_custo_2 = parseFloat (prompt("Digite o valor de custo do segundo produto:"))
+    let preco_venda_1 = parseFloat (prompt("Digite o valor de venda do primeiro produto:"))
+    let preco_venda_2 = parseFloat (prompt("Digite o valor de venda do segundo produto:"))
+
+    let venda_total = preco_venda_1 + preco_venda_2
+    let custo_total = preco_custo_1 + preco_custo_2
+    let lucro = venda_total - custo_total 
+
+
+    if (venda_total > custo_total){
+        alert ("Voce obteve lucro de " + lucro + " reais com os produtos.")
+    }
+    else if (venda_total == custo_total) {
+        alert ("Voce nao teve lucro nem prejuiso.")
+    }
+    else {
+        alert("Voce teve um prejuiso de " + lucro + " reais com os produtos.")
+    }
+    
+</script>

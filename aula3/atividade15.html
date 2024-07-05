@@ -1,0 +1,30 @@
+<script>
+
+    let A = parseInt (prompt("Digite um valor inteiro para 'A':"))
+    let B = parseInt (prompt("Digite um valor inteiro para 'B'!"))
+    let C = prompt ("Digite um simbolo para realizar a operacao: + : Adicao, - : Subtracao,  * - multiplicacao, / : divisao")
+
+    let adi = A + B
+    let sub = A - B
+    let multi = A * B
+    let div = A / B
+
+    switch (C){
+        case "+":
+            alert("O resultado da sua adicao e " + adi +" !")
+            break
+        case "-":
+            alert("O resultado da sua subitracao e " + sub +" !")
+            break
+        case "*":
+            alert("O resultado da sua multiplicacao e " + multi +" !")
+            break
+        case "/":
+            alert("O resultado da sua dicisao e " + div +" !")
+            break
+        default:
+            alert("ERRO!")
+            break
+    }
+
+</script>

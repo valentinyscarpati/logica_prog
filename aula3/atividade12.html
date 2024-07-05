@@ -1,0 +1,24 @@
+<script>
+
+    let tipo = prompt ("Selecione a area de sua conta: 1 - Residencia, 2 - Comercio, 3 - Industria.")
+    let energia = parseFloat (prompt("Digite a quantidade de enegria usada em KW/h."))
+    let conta_1 = energia*0.6
+    let conta_2 = energia*0.48
+    let conta_3 = energia*1.29
+
+    switch (tipo){
+        case "1":
+            alert ("A sua conta de luz ficou no valor de " + conta_1 + " reais")
+            break
+        case "2":
+            alert ("A sua conta de luz ficou no valor de " + conta_2 + " reais")
+            break
+        case "3":
+            alert ("A sua conta de luz ficou no valor de " + conta_3 + " reais")
+            break
+        default:
+            alert ("Digite um tipo valido de area da conta!")
+            break
+    }
+
+</script>

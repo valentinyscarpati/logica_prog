@@ -1,0 +1,28 @@
+<script>
+
+    let aluno = prompt("Digite o nome do aluno:")
+    let matricula = parseInt(prompt("Digite o numero de matricula (8 digitos)"))
+    let nota_1 = parseFloat (prompt("Digite a primeira nota!"))
+    let nota_2 = parseFloat (prompt("Digite a segunda nota!"))
+    let nota_3 = parseFloat (prompt("Digite a terceira nota!"))
+    let nota = nota_1 + nota_2 + nota_3
+    let media = nota/3
+
+    if (media > 8 && media <= 10){
+        alert("A nota final do aluno " + aluno + ", da matricula de numero " + matricula + " foi A!")
+    }
+
+    else if (media > 7 && media <= 8){
+        alert("A nota final do aluno " + aluno + ", da matricula de numero " + matricula + " foi B!")
+    }
+    else if (media > 6 && media <= 7){
+        alert("A nota final do aluno " + aluno + ", da matricula de numero " + matricula + " foi C!")
+    }
+    else if (media > 5 && media <= 6){
+        alert("A nota final do aluno " + aluno + ", da matricula de numero " + matricula + " foi D!")
+    }
+    else if (media <= 5)
+    alert("A nota final do aluno " + aluno + ", da matricula de numero " + matricula + " foi R!")
+
+
+</script>
